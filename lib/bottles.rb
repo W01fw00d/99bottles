@@ -8,11 +8,11 @@ class Bottles
         return verses(99, 0)
     end
     
-    def verses(from, to)
+    def verses(to, from)
         verses = ''
         
-        for i in to..from
-            if i === to
+        for i in from..to
+            if i === from
                 whiteline = ""
             else
                 whiteline = "\n"
