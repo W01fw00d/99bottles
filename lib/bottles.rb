@@ -4,6 +4,10 @@ class Bottles
     def initialize()
     end
     
+    def song()
+        return verses(99, 0)
+    end
+    
     def verses(from, to)
         verses = ''
         
