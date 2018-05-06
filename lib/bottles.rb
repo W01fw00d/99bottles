@@ -4,6 +4,22 @@ class Bottles
     def initialize()
     end
     
+    def verses(from, to)
+        verses = ''
+        
+        for i in to..from
+            if i === to
+                whiteline = ""
+            else
+                whiteline = "\n"
+            end
+                
+            verses = verse(i) + whiteline + verses
+        end
+        
+        return verses
+    end
+    
     def verse(n_bottles)
         n_bottles_after = n_bottles - 1
       
